@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Beauty | Premium Skincare, Haircare & Fragrance</title>
+<meta name="description" content="Luxury Beauty - curated premium skincare, haircare and fragrance essentials.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://font[s.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="index.html" class="logo"><span class="crown">&#9813;</span> Luxury Beauty</a>
+    <button class="nav-toggle" aria-label="T]oggle menu">&#9776;</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="skincare.html">Skincare</a>
+      <a href="haircare.html">Haircare</a>
+      <a href="fragrance.html">Fragrance</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Luxury Beauty</h1>
+  <p>Curated, dermatologist-loved skincare, haircare and fragrance essentials — handpicked for a radiant, confident you.</p>
+  <a href="skincare.html" class="btn">Shop Skincare</a>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-subtitle">Explore our three curated collections, each built around trusted, high-performing brands.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="img-wrap">
+          <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQXGh0In_TL8s-PMxDT1tKdvEjKBjwvFDDXBu_BdqN18svSzBqX27Zta9FjR_zeaElmIRK-aWvkBegODbHtdQiHocnYTkw6Y7rXyVd3c2m6V2x_BfXXmwnSyHPOXlgCNuZPqHleS9_5y2DbiGZFlNCqKO8d4OXIAOpVJT6EMob64Nxjj9q-90SwJeBlUeV9syiqQxU24GfuB71uuwEyrnid1ZjZxehAO2Mcxq-mORus=w1280" alt="Skincare collection">
+        </div>
+        <div class="card-body">
+          <h3>Skincare</h3>
+          <a href="skincare.html" class="link-more">Click More</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="img-wrap">
+          <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQVxGH2JCAGO5u2xVN5NQtPDce3O33KgdrSF3Cv_s7v_0q_GdY7RfNdU2_Nd8fUHzOcEHLJahIMRqEJuolAlyaBe_N-CRCg84QOTFxhgJ8D_4sjbiOraYsZxvcV_-hKk-WuPdCa7R2WNxYtgO0gsCFP8XgFkpS7vjOeMFZtjQRz9M0ug7b0ce70FaLLWC7cZ9u1nPIehte6vvgGDQz4K77fleUjcM5nikMfqT2HHTFs=w1280" alt="Haircare collection">
+        </div>
+        <div class="card-body">
+          <h3>Haircare</h3>
+          <a href="haircare.html" class="link-more">Click More</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="img-wrap">
+          <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQW1EqLFfMGc8g-TlBlec2uDHp2zZFxa_yGB5GXz-B13mX9LcVdM8dPcqpLZgtFLj1UHVmk6PEOLwpcUoKDMnMncrGgTevl2j4s9jd6o93UTF_qAP71LcFri8VbLvOFs0Pyt2Z9pizNqTOaZMonO2hxhCjC_nZr8fponN4WbPAiPDGTrYLu3Sv0oiVOnxrY=w1280" alt="Fragrance collection">
+        </div>
+        <div class="card-body">
+          <h3>Fragrance</h3>
+          <a href="fragrance.html" class="link-more">Click More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Optional: live "Trending Now" section, populated from the Node.js + MongoDB API when the backend is running -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <h2 class="section-title">Trending in Skincare</h2>
+    <p class="section-subtitle">Live from our catalog API — powered by Node.js, Express &amp; MongoDB.</p>
+    <div class="product-grid" data-api-category="skincare">
+      <p style="text-align:center;color:var(--gray);grid-column:1/-1;">Start the backend server to load live products here.</p>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <h2>Join the Luxury Beauty Circle</h2>
+  <p>Get first access to new arrivals, routines and exclusive offers.</p>
+  <form id="newsletter-form" class="newsletter-form">
+    <input type="email" placeholder="Enter your email" required>
+    <button type="submit" class="btn">Subscribe</button>
+  </form>
+  <div id="newsletter-msg" class="form-msg"></div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Luxury Beauty</h4>
+        <p>Premium, curated beauty essentials across skincare, haircare and fragrance — for every routine.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skincare.html">Skincare</a></li>
+          <li><a href="haircare.html">Haircare</a></li>
+          <li><a href="fragrance.html">Fragrance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Luxury Beauty. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
